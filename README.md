@@ -1,6 +1,6 @@
-# React Starter
+# React User auth
 
-> This repo contains boilerplate code to aid in the creation of a new React app with Redux. Follow the below setup instructions to get started.
+> basic example of user authentication in ReactJS with ReduxJS
 
 ### Setup Instructions
 
@@ -13,11 +13,4 @@
 >    - `npm install`
 > 1. Start dev server
 >    - `npm start`
-> 1. Open a browser and navigate to `localhost:3000` You should see a page that displays "Welcome to React!"
-
-### Bundle For Deployment
-
-> 1. Run webpack to bundle files
->    - `npm run bundle`
-> 
-> **NOTE:** *After bundling you can not directly run your app locally. You must run your app from the root directory of a server.*
+> 1. Open a browser and navigate to `localhost:3000` 
