@@ -27,6 +27,7 @@ class SignIn extends Component {
                                     <Field component={renderInput} name='email' placeholder='enter your email' type='email'/>
                                     <Field component={renderInput} name='password' placeholder='Enter a Password' type='password'/>
                                     <button className='btn blue-grey darken-1'>Sign In</button>
+                                    <p className='red-text center-align'>{this.props.authError}</p>
                                 </form>
                             </div>
                         </div>
@@ -42,4 +43,11 @@ SignIn = reduxForm({
     form: 'sign-in-form'
 })(SignIn);
 
-export default connect(null, {signIn})(SignIn);
+
+function mapStateToProps(state){
+    return {
+        authError: state.user.error
+    }
+}
+
+export default connect(mapStateToProps, {signIn})(SignIn);
